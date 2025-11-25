@@ -3,111 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ṢODIPE</title>
+    <title>Stephen Adegbokun</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
     
     <div class="half">
         <div class="project-list">
             <div class="project">
-                <h2 class="project-title">Chrome CoPilot <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">a co-pilot extension built with the chrome extensions api.</p>
+                <h2 class="project-title">Fraud-Predictor<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">end-to-end ml system for credit card fraud prediction</p>
                 <div class="more-details">
-                    <p>I discovered the chrome extensions api on a different project and thought it would be a nice idea to build this with it.
+                    <p> Built an ML pipeline for detecting fraudulent transactions on imbalanced financial data.  
                         <br>
-                        
-                        <br>
-                    </p>
-                    <a href="https://github.com/so-dipe/ChromeCoPilot">github repo</a>
-                </div>
-            </div>
-            <div class="project">
-                <h2 class="project-title">WhatsApp Bot <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">the bot that can.</p>
-                <div class="more-details">
-                    <p>In what started as a project to connect a language model (gemini-pro) to whatsapp, I built this...
-                        <br>
-                        A whatsapp template for a bot that can be connected to various Large Language Models and can be used for various purposes.
+                        Utilized <b>XGBoost</b> for modelling, <b>FastAPI</b> for deployment as an API and <b>Docker</b> for containerization.
                         <br>
                     </p>
-                    <a href="https://github.com/so-dipe/WhatsAppBot">github repo</a>
+                    <a href="https://github.com/datalordstephen/credit-card" target="_blank">github repo</a>
                 </div>
             </div>
             <div class="project">
-                <h2 class="project-title">Resume Generator <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">generate tailored resumes on the fly</p>
+                <h2 class="project-title">FinQuery<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">RAG powered QA system for financial documents</p>
                 <div class="more-details">
-                    <p>Add GPT3.5 turbo to a flask app, a well crafted prompt 
-                        to generate custom resumes and UI for users to post their desired job description and you 
-                        get this diabolical resume generator.
+                    <p>Created during my internship to provide a quick way to extract text from pdf documents via an API call.
+                        <br>
+                        WIP
+                        <br>
                     </p>
-                    <a href="https://github.com/so-dipe/CustomResumeGen">github repo</a>
+                    <a href="https://github.com/datalordstephen/finquery" target="_blank">github repo</a>
                 </div>
             </div>
             <div class="project">
-                <h2 class="project-title">Mental Math <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">how fast can you solve 20 math questions</p>
+                <h2 class="project-title">PDF-2-text<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">utility for easy text extraction</p>
                 <div class="more-details">
-                    <p>
-                        Just a simple game to test how fast you can solve 20 math questions in addition, subtraction, 
-                        multiplication and division.
+                    <p>Created during my internship to provide a quick way to extract text from pdf documents via an API call.
+                        <br>
+                        Built with <b>pytessaract</b>, it takes in the url of a pdf file and returns the extracted text as a response. 
+                        Containerized with Docker and deployed on Render.
+                        <br>
                     </p>
-                    <a href="https://github.com/so-dipe/MentalMath">github repo</a>
+                    <a href="https://github.com/datalordstephen/pdf-2-text" target="_blank">github repo</a>
                 </div>
             </div>
             <div class="project">
-                <h2 class="project-title">Snake Game Agent with Q-Learning <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">a reinforcement learning agent trained to play Snake</p>
-                <div class="more-details">
-                    <p>
-                        I created a snake game with pygame and trained a Deep Q-Learning agent to play it. 
-                        Used stable-baselines3 and gymnasium extensively for this project
-                    </p>
-                    <a href="https://www.kaggle.com/code/sodipepaul/snake-rl">notebook link</a>
-                </div>
-            </div>
-            <div class="project">
-                <h2 class="project-title">Atari Breakout: Deep Reinforcement Learning <span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">implemented in "ATARI paper" on breakout with pytorch </p>
+                <h2 class="project-title">Manga-Downloader<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">CLI tool that downloads manga and saves to your local machine.</p>
                 <div class="more-details">
                     <p>
-                        Ran into memory issues while working on this. Definitely not my best work.
+                        A python command line tool that scrapes manga from <i>mangasee</i> 
+                        and saves the images to your local machine in the right order. 
+                        Built with <b>selenium</b> and <b>BeautifulSoup4</b>.
                     </p>
-                    <a href="hhttps://www.kaggle.com/code/sodipepaul/notebook857a08c44f">notebook link</a>
-                </div>
-            </div>
-            <div class="project">
-                <h2 class="project-title">Chess GPT<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">GPT2 finetuned with 6 million games</p>
-                <div class="more-details">
-                    <p>
-                        I had bigger plans for this model but I ran out of compute resources. Hosted on streamlit.
-                    </p>
-                    <a href="https://chess-gpt-sodipe.streamlit.app/">open on streamlit</a>
-                </div>
-            </div>
-            <div class="project">
-                <h2 class="project-title">WhatsApp Chat Analyzer<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">Analyse your whatsapp conversations and draw insights</p>
-                <div class="more-details">
-                    <p>
-                        Bar Charts, Word Clouds, and a lot of other visualizations.
-                    </p>
-                    <a href="https://so-dipe-whatsapp-chat-analyzer-appmain-7uov30.streamlit.app/">open on streamlit</a>
-                </div>
-            </div>
-            <div class="project">
-                <h2 class="project-title">Number Classifier<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">classify written numbers 0-9</p>
-                <div class="more-details">
-                    <p>
-                        Old project I work on but still have to include it.
-                    </p>
-                    <a href="https://so-dipe-mnist-streamlit-main-fkcktl.streamlit.app/">open on streamlit</a>
+                    <a href="https://github.com/datalordstephen/manga-scraper" target="_blank">github repo</a>
                 </div>
             </div>
             <!-- Repeat for each project -->
@@ -121,7 +74,7 @@
     </div>
     <div class="title-nav-icon">
         <div class="page-title">
-            <h1>portfolio</h1>
+            <h1>projects</h1>
         </div>
         <div class="nav-icon">
             <span></span>
@@ -131,24 +84,18 @@
     </div>
     <div id="nav" class="nav">
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/projects.html">Portfolio</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./blog.html">Blog</a></li>
         </ul>
         <button id="dark-mode-toggle">turn off the lights</button>
-        <button id="font-toggle">dyslexic</button>
-        <div class="social-media-icons" style="border-top: 1px solid #000;">
-            <a href="mailto:sodipepaul@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/so-dipe/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://medium.com/@sodipepaul"><i class="fab fa-medium"></i></a>
-            <a href="https://www.kaggle.com/sodipepaul"><i class="fab fa-kaggle"></i></a>
-            <a href="https://open.spotify.com/user/ja9kmd6xq9k8j8kqu716vmsug"><i class="fab fa-spotify"></i></a>
-            <a href="https://www.codewars.com/users/so-dipe"><i class="fa fa-code"></i></a>
-            <a href="https://github.com/so-dipe"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/_sodipe"><i class="fab fa-twitter"></i></a>
-            <a href="https://sodipe.substack.com/"><i class="fas fa-envelope-open-text"></i></a>
+        <div class="social-media-icons">
+            <a href="mailto:obaadegbokun1@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/stephen-adegbokun/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://medium.com/@obaadegbokun1"><i class="fab fa-medium"></i></a>
+            <a href="https://github.com/datalordstephen"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/heisoba_"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
     <script src="assets/js/main.js"></script>
