@@ -8,7 +8,7 @@ body {
     margin: 0;
     background: #f3f3f3;
     font-family: 'Lexend', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .half {
@@ -20,7 +20,7 @@ body {
 .half h1 {
     font-size: 4em;
     margin: 0 0 20px 0;
-    color: #383838;
+    color: #000;
     text-transform: uppercase;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
@@ -332,7 +332,7 @@ body.dark-mode .half:first-child {
     border-radius: 4px;
     text-decoration: none;
     font-family: "Lexend", sans-serif;
-    margin-top: 20px;
+    margin-top: 0;
     transition: background 0.3s;
 }
 
@@ -348,7 +348,7 @@ body.dark-mode .resume-btn {
 
 /* 6. SOCIAL ICONS (Home Page Version) */
 .home-social {
-    margin-top: 30px;
+    margin-top: 0;
     display: flex;
     gap: 20px;
 }
@@ -369,3 +369,11 @@ body.dark-mode .left-footer button {
     border-color: #fff;
     color: #fff;
 }
+
+.action-container {
+    display: flex;
+    align-items: center; /* Aligns button and icons vertically */
+    gap: 25px; /* Space between button and first icon */
+    margin-top: 25px; /* Space between bio text and this row */
+}
+
