@@ -8,7 +8,9 @@ body {
     margin: 0;
     background: #f3f3f3;
     font-family: 'Lexend', sans-serif;
+    font-size: 17px;
 }
+
 .half {
     flex: 1;
     display: flex;
@@ -16,14 +18,14 @@ body {
     flex-direction: column;
 }
 .half h1 {
-    font-size: 5em;
-    margin: 0;
+    font-size: 4em;
+    margin: 0 0 20px 0;
     color: #383838;
     text-transform: uppercase;
-    font-weight: 900;
-    font-family: Poppins, sans-serif;
-
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
+
 .half:first-child {
     background: #fff;
     justify-content: flex-start;
@@ -319,4 +321,51 @@ body.dark-mode .half:first-child {
     .half:not(:first-child) {
         display: none;
     }
+}
+
+/* 5. RESUME BUTTON STYLE */
+.resume-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.resume-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .resume-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 6. SOCIAL ICONS (Home Page Version) */
+.home-social {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.home-social a {
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.home-social a:hover {
+    color: #a200ff;
+}
+
+body.dark-mode .home-social a {
+    color: #fff;
+}
+
+body.dark-mode .left-footer button {
+    border-color: #fff;
+    color: #fff;
 }
