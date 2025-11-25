@@ -1,8 +1,8 @@
 const texts = [
     "machine learning engineer.",
     "data scientist.",
-    "rema stan.",
-    "gojo fanatic.",
+    "rema fanboy.",
+    "gojo stan.",
     "twitter enjoyoor.",
     "cs undergrad."
 ]; 
