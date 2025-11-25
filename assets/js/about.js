@@ -1,12 +1,10 @@
 const texts = [
-    "math nerd.",
     "machine learning engineer.",
     "data scientist.",
-    "billie eilish stan.",
-    "chess player.",
-    "twitter shitposter.",
-    "wiki editor.",
-    "occasional blogger.",
+    "rema stan.",
+    "gojo fanatic.",
+    "twitter enjoyoor.",
+    "cs undergrad."
 ]; 
 let count = 0;
 let index = 0;
@@ -24,8 +22,8 @@ let letter = '';
     if (letter.length === currentText.length) {
         count++;
         index = 0;
-        setTimeout(type, 1000);
+        setTimeout(type, 1200);
     } else {
-        setTimeout(type, 200);
+        setTimeout(type, 70);
     }
 }());
