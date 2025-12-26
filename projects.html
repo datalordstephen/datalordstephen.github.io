@@ -15,11 +15,26 @@
     <div class="half">
         <div class="project-list">
             <div class="project">
+                <h2 class="project-title">FinQuery<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">RAG powered financial document Q&A system</p>
+                <div class="more-details">
+                    <p>Built a production-ready <b>RAG</b> system for querying financial documents using <b>hybrid retrieval</b> (semantic + BM25)
+                        <br><br>
+                        Engineered a <b>full-stack</b> solution consisting of a <b>FastAPI</b> backend
+                        and a clean <b>React + Vite</b> frontend. 
+                        <br><br>
+                        Processes PDFs with a custom <b>ingestion</b> pipeline 
+                        while retrieving relavant responses with accurate <b>page-level citations</b>.
+                    </p>
+                    <a href="https://github.com/datalordstephen/finquery" target="_blank">github repo</a>
+                </div>
+            </div>
+            <div class="project">
                 <h2 class="project-title">Fraud-Predictor<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
                 <p class="short-description">end-to-end ml system for credit card fraud prediction</p>
                 <div class="more-details">
                     <p> Built an ML pipeline for detecting fraudulent transactions on imbalanced financial data.  
-                        <br>
+                        <br><br>
                         Utilized <b>XGBoost</b> for modelling, <b>FastAPI</b> for deployment as an API and <b>Docker</b> for containerization.
                         <br>
                     </p>
@@ -27,19 +42,11 @@
                 </div>
             </div>
             <div class="project">
-                <h2 class="project-title">FinQuery<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">RAG powered QA system for financial documents</p>
-                <div class="more-details">
-                    <p>WIP</p>
-                    <a href="https://github.com/datalordstephen/finquery" target="_blank">github repo</a>
-                </div>
-            </div>
-            <div class="project">
                 <h2 class="project-title">PDF-2-text<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
                 <p class="short-description">utility for easy text extraction</p>
                 <div class="more-details">
                     <p>Created during my internship to provide a quick way to extract text from pdf documents via an API call.
-                        <br>
+                        <br><br>
                         Built with <b>pytessaract</b>, it takes in the url of a pdf file and returns the extracted text as a response. 
                         Containerized with Docker and deployed on Render.
                         <br>
