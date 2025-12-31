@@ -16,52 +16,61 @@
         <div class="project-list">
             <div class="project">
                 <h2 class="project-title">FinQuery<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">RAG powered financial document Q&A system</p>
+                <p class="short-description">RAG-powered financial document Q&A system</p>
                 <div class="more-details">
-                    <p>Built a production-ready <b>RAG</b> system for querying financial documents using <b>hybrid retrieval</b> (semantic + BM25)
+                    <p>
+                        Production-ready <b>RAG system</b> for querying financial documents using <b>ChromaDB</b> and <b>hybrid retrieval</b> (semantic + BM25).
                         <br><br>
-                        Engineered a <b>full-stack</b> solution consisting of a <b>FastAPI</b> backend
-                        and a clean <b>React + Vite</b> frontend. 
+                        Full-stack solution with <b>FastAPI</b> backend and <b>React + Vite</b> frontend. 
+                        Custom PDF ingestion pipeline with accurate <b>page-level citations</b>.
                         <br><br>
-                        Processes PDFs with a custom <b>ingestion</b> pipeline 
-                        while retrieving relavant responses with accurate <b>page-level citations</b>.
+                        <b>Tech:</b> LangChain, ChromaDB, FastAPI, React
                     </p>
                     <a href="https://github.com/datalordstephen/finquery" target="_blank">github repo</a>
                 </div>
             </div>
+            
             <div class="project">
-                <h2 class="project-title">Fraud-Predictor<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">end-to-end ml system for credit card fraud prediction</p>
+                <h2 class="project-title">Credit Card Fraud Detection<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">End-to-end ML pipeline achieving 97% recall on fraud detection</p>
                 <div class="more-details">
-                    <p> Built an ML pipeline for detecting fraudulent transactions on imbalanced financial data.  
+                    <p>
+                        Production ML system for detecting fraudulent transactions on highly imbalanced data (0.17% fraud rate).
                         <br><br>
-                        Utilized <b>XGBoost</b> for modelling, <b>FastAPI</b> for deployment as an API and <b>Docker</b> for containerization.
-                        <br>
+                        Trained <b>XGBoost</b> with hyperparameter tuning, deployed as <b>FastAPI</b> service, containerized with <b>Docker</b>, 
+                        and hosted on Render with CI/CD.
+                        <br><br>
+                        <b>Tech:</b> XGBoost, FastAPI, Docker, Render
                     </p>
-                    <a href="https://github.com/datalordstephen/credit-card" target="_blank">github repo</a>
+                    <a href="https://github.com/datalordstephen/credit-card" target="_blank">github repo</a> • 
+                    <a href="https://cc-fraud-service.onrender.com" target="_blank">live demo</a>
                 </div>
             </div>
+            
             <div class="project">
-                <h2 class="project-title">PDF-2-text<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">utility for easy text extraction</p>
+                <h2 class="project-title">PDF-2-Text<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
+                <p class="short-description">API for text extraction from PDFs</p>
                 <div class="more-details">
-                    <p>Created during my internship to provide a quick way to extract text from pdf documents via an API call.
+                    <p>
+                        Built during internship to extract text from PDF documents via API call. 
+                        Uses <b>Tesseract OCR</b> for image-based PDFs.
                         <br><br>
-                        Built with <b>pytessaract</b>, it takes in the url of a pdf file and returns the extracted text as a response. 
-                        Containerized with Docker and deployed on Render.
-                        <br>
+                        Takes PDF URL, returns extracted text. Deployed on Render.
+                        <br><br>
+                        <b>Tech:</b> Pytesseract, FastAPI, Docker
                     </p>
                     <a href="https://github.com/datalordstephen/pdf-2-text" target="_blank">github repo</a>
                 </div>
             </div>
+            
             <div class="project">
                 <h2 class="project-title">Manga-Downloader<span class="dropdown-icon"><i class="fas fa-chevron-down"></i></span></h2>
-                <p class="short-description">CLI tool that downloads manga and saves to your local machine.</p>
+                <p class="short-description">CLI tool for downloading manga chapters</p>
                 <div class="more-details">
                     <p>
-                        A python command line tool that scrapes manga from <i>mangasee</i> 
-                        and saves the images to your local machine in the right order. 
-                        Built with <b>selenium</b> and <b>BeautifulSoup4</b>.
+                        Python CLI that scrapes manga from MangaSee and saves images locally in correct order.
+                        <br><br>
+                        <b>Tech:</b> Selenium, BeautifulSoup4
                     </p>
                     <a href="https://github.com/datalordstephen/manga-scraper" target="_blank">github repo</a>
                 </div>
