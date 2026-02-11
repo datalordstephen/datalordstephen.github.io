@@ -59,8 +59,8 @@ window.addEventListener('popstate', function () {
 
 // ========== DARK MODE ==========
 
-function updateThemeIcons(isDark) {
-    var iconClass = isDark ? 'fas fa-sun' : 'fas fa-moon';
+function updateThemeIcons(isLight) {
+    var iconClass = isLight ? 'fas fa-moon' : 'fas fa-sun';
     var toggleDesktop = document.querySelector('#themeToggle i');
     var toggleMobile = document.querySelector('#themeToggleMobile i');
     if (toggleDesktop) toggleDesktop.className = iconClass;
@@ -68,15 +68,15 @@ function updateThemeIcons(isDark) {
 }
 
 function toggleTheme() {
-    document.body.classList.toggle('dark-mode');
-    var isDark = document.body.classList.contains('dark-mode');
-    localStorage.setItem('dark-mode', isDark ? 'true' : 'false');
-    updateThemeIcons(isDark);
+    document.body.classList.toggle('light-mode');
+    var isLight = document.body.classList.contains('light-mode');
+    localStorage.setItem('light-mode', isLight ? 'true' : 'false');
+    updateThemeIcons(isLight);
 }
 
-// Load saved theme
-if (localStorage.getItem('dark-mode') === 'true') {
-    document.body.classList.add('dark-mode');
+// Load saved theme (dark by default)
+if (localStorage.getItem('light-mode') === 'true') {
+    document.body.classList.add('light-mode');
     updateThemeIcons(true);
 }
 
