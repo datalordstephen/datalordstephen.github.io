@@ -5,75 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephen Adegbokun</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    
-    <div class="half">
-        <div class="bio">
-            <h1>STEPHEN</h1>
-            <p>
-                Hey, I'm Stephen. An <b>ML Engineer</b> building production AI systems.
-                <br><br>
-                I specialize in <b>RAG architectures</b>, classical ML pipelines, and deploying models that actually work in production. 
-                Currently exploring <b>PyTorch</b> for deep learning and multi-agent systems.
-                <br><br>
-                Recent work: <b>FinQuery</b> (RAG system for financial docs) and a <b>credit card fraud detector</b> with 97% recall, 
-                deployed on Render.
-                <br><br>
-                When I'm not coding, I'm watching <a href="https://www.youtube.com/@ThePrimeTimeagen">ThePrimeagen</a>, 
-                reading manga, or scrolling X.
-                <br><br>
-                <b>Lagos, Nigeria | Open to Remote Roles</b>
-                <br><br>
-                Want to know more? Check out my <a href="./about.html">about page</a>.
-            </p>
 
-            <div class="action-container">
-                <a href="https://drive.google.com/file/d/1NmzdD7NEaaLfjS2pmp5Z8tIwUPma2Jfb/view?usp=sharing" class="resume-btn" target="_blank">
-                    View Resume
-                </a>
+    <!-- Mobile top bar -->
+    <div class="mobile-top-bar">
+        <button class="theme-toggle" id="themeToggleMobile">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
 
-                <div class="home-social">
-                <a href="mailto:obaadegbokun1@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/stephen-adegbokun/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/datalordstephen"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/heisoba_"><i class="fab fa-twitter"></i></a>
-                </div>
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="nav-links">
+                <button class="nav-item active" data-target="about">About</button>
+                <button class="nav-item" data-target="projects">Projects</button>
+                <button class="nav-item" data-target="writing">Writing</button>
+                <button class="nav-item" data-target="certifications">Certifications</button>
+                <button class="nav-item" data-target="experience">Experience</button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
+        </nav>
+
+        <!-- Content -->
+        <main class="content">
+
+            <!-- ABOUT -->
+            <section id="about" class="active">
+                <div class="section-description about-intro">
+                    Hi, I'm Stephen &mdash; an ML Engineer building production AI systems, passionate about
+                    <span class="typewriter-text" id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects">
+                <div class="section-description">Selected projects.</div>
+                <div class="items">
+                    <div class="item">
+                        <div class="item-meta">2026</div>
+                        <div class="item-content">
+                            <div class="item-title"><a href="https://github.com/datalordstephen/echo" target="_blank">Echo</a></div>
+                            <div class="item-description">Deep learning audio classifier. 80% F1-score on UrbanSound8K with 10-fold cross-validation. ~20% faster CPU inference via ONNX optimization.</div>
+                            <div class="item-tools">Python, PyTorch, Transformers, ONNX, uv</div>
+                            <div class="item-links">
+                                <a href="https://github.com/datalordstephen/echo" target="_blank">GitHub</a> &middot;
+                                <a href="https://echo-sound.vercel.app/" target="_blank">Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-meta">2025</div>
+                        <div class="item-content">
+                            <div class="item-title"><a href="https://github.com/datalordstephen/finquery" target="_blank">FinQuery</a></div>
+                            <div class="item-description">RAG system for financial document Q&A. Hybrid retrieval (semantic + BM25) with ChromaDB, page-level citations. FastAPI + React full-stack.</div>
+                            <div class="item-tools">LangChain, ChromaDB, FastAPI, React</div>
+                            <div class="item-links">
+                                <a href="https://github.com/datalordstephen/finquery" target="_blank">GitHub</a> &middot;
+                                <a href="https://finquery-frontend.vercel.app/" target="_blank">Live Site</a> &middot;
+                                <a href="https://cap.so/s/c7mfqk9ebt8047n" target="_blank">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-meta"></div>
+                        <div class="item-content">
+                            <div class="item-title"><a href="https://github.com/datalordstephen/credit-card" target="_blank">Credit Card Fraud Detection</a></div>
+                            <div class="item-description">Fraud detection on imbalanced data (0.17% fraud rate). 97% recall with XGBoost. Dockerized FastAPI service deployed on Render.</div>
+                            <div class="item-tools">XGBoost, FastAPI, Docker, Render</div>
+                            <div class="item-links">
+                                <a href="https://github.com/datalordstephen/credit-card" target="_blank">GitHub</a> &middot;
+                                <a href="https://cc-fraud-service.onrender.com" target="_blank">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WRITING -->
+            <section id="writing">
+                <div class="section-description">Writing &amp; articles.</div>
+                <div class="items">
+                    <div class="item">
+                        <div class="item-meta">2025.12.31</div>
+                        <div class="item-content">
+                            <div class="item-title"><a href="https://medium.com/@obaadegbokun1/building-finquery-a-rag-system-for-financial-documents-a9f284ecdc15" target="_blank">Building Finquery: A RAG System for Financial Documents</a></div>
+                            <div class="item-description">Deep dive into building a production RAG pipeline — hybrid retrieval, chunking strategies, and page-level citations for financial PDFs.</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-meta">2025.09.28</div>
+                        <div class="item-content">
+                            <div class="item-title"><a href="https://medium.com/@obaadegbokun1/detecting-credit-card-fraud-with-machine-learning-1aa1e445d656" target="_blank">Detecting Credit Card Fraud with Machine Learning</a></div>
+                            <div class="item-description">Tackling extreme class imbalance (0.17% fraud rate) with XGBoost — from feature engineering to deploying a 97% recall model.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATIONS -->
+            <section id="certifications">
+                <div class="section-description">Certifications.</div>
+                <div class="items">
+                    <div class="item">
+                        <div class="item-meta">2025</div>
+                        <div class="item-content">
+                            <div class="item-title"><a href="https://certificate.datatalks.club/ml-zoomcamp/2025/eda64d601445bc15ef13820c8c90c789b93e2115.pdf" target="_blank">Machine Learning Zoomcamp</a></div>
+                            <div class="item-subtitle">DataTalksClub</div>
+                            <div class="item-description">End-to-end ML engineering: regression, classification, decision trees, XGBoost, deep learning (TensorFlow/PyTorch), model deployment with Docker, FastAPI, Kubernetes, and AWS Lambda.</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-meta">2024</div>
+                        <div class="item-content">
+                            <div class="item-title"><a href="https://drive.google.com/file/d/10uZRvWai0pMjh6im4M3jac-ZMCFDe0JQ/view?usp=sharing" target="_blank">AI/ML Developer</a></div>
+                            <div class="item-subtitle">Robotics and Artificial Intelligence Nigeria</div>
+                            <div class="item-description">EDA, data wrangling and visualization, classical ML (supervised/unsupervised learning), deep learning (neural nets, computer vision), web development, and deployment.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section id="experience">
+                <div class="section-description">Experience.</div>
+                <div class="items">
+                    <div class="item">
+                        <div class="item-meta">Sept 2025 &mdash; Feb 2026</div>
+                        <div class="item-content">
+                            <div class="item-title">Developer Intern</div>
+                            <div class="item-subtitle">Fidelity Bank Plc</div>
+                            <div class="item-description">Contributing to financial solutions with a focus on supervised ML techniques. Deploying ML models in production using FastAPI and Docker.</div>
+                            <div class="item-tools">Python, FastAPI, Docker</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-meta">May &mdash; July 2024</div>
+                        <div class="item-content">
+                            <div class="item-title">Data Science Intern</div>
+                            <div class="item-subtitle">Robotics and Artificial Intelligence Nigeria</div>
+                            <div class="item-description">Built end-to-end web scraping pipelines for immigration research. Collaborated on a flood prediction project with NAIRS using time-series modeling for early warning systems.</div>
+                            <div class="item-tools">Python, Web Scraping, Time-Series Modeling</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Contact bar (footer) -->
+    <div class="contact-bar">
+        <div class="profile-photo">
+            <img src="assets/images/toji-edit.png" alt="Stephen Adegbokun">
+        </div>
+        <div class="contact-links">
+            <a href="mailto:obaadegbokun1@gmail.com">Email</a>
+            <span class="dot">&middot;</span>
+            <a href="https://www.linkedin.com/in/stephen-adegbokun/" target="_blank">LinkedIn</a>
+            <span class="dot">&middot;</span>
+            <a href="https://github.com/datalordstephen" target="_blank">GitHub</a>
+            <span class="dot">&middot;</span>
+            <a href="https://medium.com/@obaadegbokun1" target="_blank">Medium</a>
+            <span class="dot">&middot;</span>
+            <a href="https://drive.google.com/file/d/1NmzdD7NEaaLfjS2pmp5Z8tIwUPma2Jfb/view?usp=sharing" target="_blank">Resume</a>
         </div>
     </div>
-    <div class="half">
-        <!-- <div class="slideshow"></div> -->
-        <div class="type-text">
-            <p>Euler Lagrange</p>
-        </div>
-    </div>
-    <div class="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div id="nav" class="nav">
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-        </ul>
-        <button id="dark-mode-toggle">turn off the lights</button>
-        <div class="social-media-icons">
-            <a href="mailto:obaadegbokun1@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/stephen-adegbokun/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://medium.com/@obaadegbokun1"><i class="fab fa-medium"></i></a>
-            <a href="https://github.com/datalordstephen"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/heisoba_"><i class="fab fa-twitter"></i></a>
-        </div>
-    </div>
+
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/about.js"></script>
 </body>
 </html>
